@@ -1,0 +1,38 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.landing-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.countdown-wrapper {
+    position: absolute;
+    top: 60%; /* Adjust this to place the timer below your tagline in the PNG */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .countdown-wrapper {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+}
